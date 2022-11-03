@@ -2912,7 +2912,15 @@ ul.about-info .li   .span{
   display: none;
   /* float: left; */
 }
-
+.details,
+.show,
+.hide:target {
+  display: none;
+}
+.hide:target + .show,
+.hide:target ~ .details {
+  display:inline-block;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * works
